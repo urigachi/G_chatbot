@@ -22,6 +22,7 @@ st.title("ChatPDF기반 Q&A시스템입니다")
 loader = PyPDFLoader("./unsu.pdf")
 st.write("---")
 pages = loader.load_and_split()
+st.write(pages[0])
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 texts = text_splitter.split_documents(pages)
