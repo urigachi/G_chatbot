@@ -19,7 +19,7 @@ st.write("---")
 st.title("ChatPDF기반 Q&A시스템입니다")
 # 파일 업로드
 #uploaded_files = st.file_uploader("PDF 파일을 올려주세요", type = ['pdf'])
-loader = PyPDFLoader("C:/Users/beomg/PycharmProjects/pythonProject5/unsu.pdf")
+loader = PyPDFLoader("./unsu.pdf")
 st.write("---")
 pages = loader.load_and_split()
 
